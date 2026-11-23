@@ -1,0 +1,19 @@
+{
+  "feature_columns": [
+    "recency_days",
+    "frequency",
+    "monetary_net"
+  ],
+  "scaler_type": "standard",
+  "output_features": [
+    "scaled_log_recency_days",
+    "scaled_log_frequency",
+    "scaled_log_monetary_net"
+  ],
+  "n_features_in": 3,
+  "feature_definitions": {
+    "recency_days": "Calendar days from customer's last transaction to analysis date (log1p transformed)",
+    "frequency": "Count of distinct valid purchase orders placed by customer (log1p transformed)",
+    "monetary_net": "Gross sales minus cancellations/returns in GBP (symmetric signed log1p transformed)"
+  }
+}

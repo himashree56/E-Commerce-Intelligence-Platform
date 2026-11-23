@@ -1,0 +1,48 @@
+{
+  "model_version": "v1.0.0",
+  "trained_at": "2026-11-23T17:00:42.192223+00:00",
+  "duration_seconds": 7.4,
+  "train_snapshots": [
+    "2010-09-01",
+    "2010-12-01",
+    "2011-03-01",
+    "2011-06-01"
+  ],
+  "val_snapshot": "2011-08-01",
+  "train_record_count": 17057,
+  "val_record_count": 5143,
+  "train_positive_count": 3357,
+  "train_negative_count": 13700,
+  "train_prevalence_pct": 19.68,
+  "scale_pos_weight": 4.081,
+  "best_hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8
+  },
+  "feature_count": 18,
+  "feature_names": [
+    "recency_days",
+    "tenure_days",
+    "purchase_frequency",
+    "net_monetary_value",
+    "gross_sales",
+    "return_amount",
+    "return_ratio",
+    "cancellation_frequency",
+    "avg_order_value",
+    "avg_order_interval_days",
+    "purchases_last_30d",
+    "purchases_last_60d",
+    "purchases_last_90d",
+    "spend_last_30d",
+    "spend_last_60d",
+    "spend_last_90d",
+    "product_diversity",
+    "total_quantity_purchased"
+  ],
+  "raw_decision_threshold": 0.59,
+  "calibrated_decision_threshold": 0.27
+}

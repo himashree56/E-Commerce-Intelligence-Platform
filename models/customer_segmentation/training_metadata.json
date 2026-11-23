@@ -1,0 +1,48 @@
+{
+  "model_version": "v1.0.0",
+  "trained_at": "2026-11-22T18:33:34.822579+00:00",
+  "training_duration_seconds": 15.72,
+  "total_training_records": 5939,
+  "features_used": [
+    "recency_days",
+    "frequency",
+    "monetary_net"
+  ],
+  "optimal_k": 5,
+  "random_state": 42,
+  "n_init": 20,
+  "scaler_type": "standard",
+  "inertia": 4102.79,
+  "silhouette_score": 0.3839,
+  "davies_bouldin_index": 0.8103,
+  "calinski_harabasz_index": 4959.0,
+  "raw_to_mapped_mapping": {
+    "4": [
+      4,
+      "Net Returners & Refund Adjusters"
+    ],
+    "2": [
+      0,
+      "High-Value Loyal Champions"
+    ],
+    "1": [
+      3,
+      "Lost Low-Value Buyers"
+    ],
+    "0": [
+      2,
+      "Lapsed High-Potential Customers"
+    ],
+    "3": [
+      1,
+      "Active Recent Shoppers"
+    ]
+  },
+  "cluster_labels": {
+    "0": "High-Value Loyal Champions",
+    "1": "Active Recent Shoppers",
+    "2": "Lapsed High-Potential Customers",
+    "3": "Lost Low-Value Buyers",
+    "4": "Net Returners & Refund Adjusters"
+  }
+}

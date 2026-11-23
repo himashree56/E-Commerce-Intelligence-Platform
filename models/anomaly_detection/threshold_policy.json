@@ -1,0 +1,7 @@
+{
+  "contamination_parameter": 0.01,
+  "internal_offset": -0.5982997240867993,
+  "decision_threshold": 0.0,
+  "score_direction": "raw_decision_score: scikit-learn decision_function(X) (higher is normal, negative is anomalous). anomaly_score: -raw_decision_score (higher is more anomalous, positive is anomalous).",
+  "anomaly_decision_rule": "is_anomaly = raw_decision_score < 0.0 (or anomaly_score > 0.0)"
+}

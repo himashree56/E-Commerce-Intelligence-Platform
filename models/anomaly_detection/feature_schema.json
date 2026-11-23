@@ -1,0 +1,29 @@
+{
+  "features": [
+    "log_abs_quantity",
+    "log_unit_price",
+    "log_abs_line_total",
+    "product_price_deviation",
+    "log_prior_customer_orders",
+    "is_missing_customer",
+    "invoice_hour_sin",
+    "invoice_hour_cos",
+    "invoice_day_sin",
+    "invoice_day_cos"
+  ],
+  "feature_count": 10,
+  "expected_input_columns": [
+    "invoice_no",
+    "stock_code",
+    "quantity",
+    "unit_price",
+    "invoice_date",
+    "customer_id",
+    "country",
+    "transaction_status"
+  ],
+  "numeric_constraints": {
+    "quantity": "finite float or integer",
+    "unit_price": "finite non-negative float"
+  }
+}

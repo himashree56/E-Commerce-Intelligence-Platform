@@ -1,0 +1,49 @@
+# E-Commerce Intelligence Platform - Bronze Ingestion Configuration
+
+pipeline:
+  name: "ecommerce_bronze_ingestion"
+  version: "1.0.0"
+
+dataset:
+  name: "UCI Online Retail II"
+  url: "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip"
+  zip_filename: "online+retail+ii.zip"
+  excel_filename: "online_retail_II.xlsx"
+  expected_sheets:
+    - "Year 2009-2010"
+    - "Year 2010-2011"
+
+storage:
+  raw_dir: "data/raw"
+  bronze_dir: "data/bronze"
+  metadata_dir: "data/metadata"
+  logs_dir: "logs"
+  unified_parquet: "online_retail_bronze.parquet"
+  parquet_compression: "snappy"
+
+schema:
+  expected_raw_columns:
+    - "Invoice"
+    - "StockCode"
+    - "Description"
+    - "Quantity"
+    - "InvoiceDate"
+    - "Price"
+    - "Customer ID"
+    - "Country"
+
+  column_mapping:
+    Invoice: "invoice_no"
+    StockCode: "stock_code"
+    Description: "description"
+    Quantity: "quantity"
+    InvoiceDate: "invoice_date"
+    Price: "unit_price"
+    "Customer ID": "customer_id"
+    Country: "country"
+
+quality_rules:
+  preserve_cancellations: true
+  preserve_negative_quantities: true
+  preserve_missing_customers: true
+  log_duplicates: true

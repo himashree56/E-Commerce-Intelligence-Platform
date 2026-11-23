@@ -1,0 +1,171 @@
+{
+  "validation": {
+    "dummy_baseline": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.1577,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier_score": 0.1344,
+      "precision_at_top_5_pct": 0.1518,
+      "precision_at_top_10_pct": 0.1829,
+      "confusion_matrix": {
+        "tn": 4332,
+        "fp": 0,
+        "fn": 811,
+        "tp": 0
+      },
+      "threshold": 0.5
+    },
+    "logistic_regression": {
+      "roc_auc": 0.8309,
+      "pr_auc": 0.5457,
+      "precision": 0.3591,
+      "recall": 0.7509,
+      "f1": 0.4858,
+      "brier_score": 0.1696,
+      "precision_at_top_5_pct": 0.7393,
+      "precision_at_top_10_pct": 0.5973,
+      "confusion_matrix": {
+        "tn": 3245,
+        "fp": 1087,
+        "fn": 202,
+        "tp": 609
+      },
+      "threshold": 0.5
+    },
+    "xgboost": {
+      "roc_auc": 0.8357,
+      "pr_auc": 0.559,
+      "precision": 0.462,
+      "recall": 0.5993,
+      "f1": 0.5217,
+      "brier_score": 0.1551,
+      "precision_at_top_5_pct": 0.7626,
+      "precision_at_top_10_pct": 0.6109,
+      "confusion_matrix": {
+        "tn": 3766,
+        "fp": 566,
+        "fn": 325,
+        "tp": 486
+      },
+      "threshold": 0.59
+    },
+    "xgboost_calibrated_sigmoid": {
+      "roc_auc": 0.8357,
+      "pr_auc": 0.559,
+      "precision": 0.4668,
+      "recall": 0.5894,
+      "f1": 0.521,
+      "brier_score": 0.0987,
+      "precision_at_top_5_pct": 0.7626,
+      "precision_at_top_10_pct": 0.6109,
+      "confusion_matrix": {
+        "tn": 3786,
+        "fp": 546,
+        "fn": 333,
+        "tp": 478
+      },
+      "threshold": 0.27
+    }
+  },
+  "test": {
+    "dummy_baseline": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.2041,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier_score": 0.1625,
+      "precision_at_top_5_pct": 0.2325,
+      "precision_at_top_10_pct": 0.2284,
+      "confusion_matrix": {
+        "tn": 4328,
+        "fp": 0,
+        "fn": 1110,
+        "tp": 0
+      },
+      "threshold": 0.5
+    },
+    "logistic_regression": {
+      "roc_auc": 0.7632,
+      "pr_auc": 0.4951,
+      "precision": 0.3838,
+      "recall": 0.6252,
+      "f1": 0.4757,
+      "brier_score": 0.1854,
+      "precision_at_top_5_pct": 0.7491,
+      "precision_at_top_10_pct": 0.593,
+      "confusion_matrix": {
+        "tn": 3214,
+        "fp": 1114,
+        "fn": 416,
+        "tp": 694
+      },
+      "threshold": 0.5
+    },
+    "xgboost": {
+      "roc_auc": 0.775,
+      "pr_auc": 0.518,
+      "precision": 0.4832,
+      "recall": 0.4793,
+      "f1": 0.4812,
+      "brier_score": 0.1694,
+      "precision_at_top_5_pct": 0.7749,
+      "precision_at_top_10_pct": 0.6022,
+      "confusion_matrix": {
+        "tn": 3759,
+        "fp": 569,
+        "fn": 578,
+        "tp": 532
+      },
+      "threshold": 0.59
+    },
+    "xgboost_calibrated_sigmoid": {
+      "roc_auc": 0.775,
+      "pr_auc": 0.518,
+      "precision": 0.4898,
+      "recall": 0.4757,
+      "f1": 0.4826,
+      "brier_score": 0.1348,
+      "precision_at_top_5_pct": 0.7749,
+      "precision_at_top_10_pct": 0.6022,
+      "confusion_matrix": {
+        "tn": 3778,
+        "fp": 550,
+        "fn": 582,
+        "tp": 528
+      },
+      "threshold": 0.27
+    },
+    "activity_subgroups_xgboost": {
+      "low_activity_1_2_orders": {
+        "count": 2545,
+        "positives": 248,
+        "prevalence_pct": 9.74,
+        "roc_auc": 0.7282,
+        "pr_auc": 0.2261,
+        "precision": 0.3077,
+        "recall": 0.0323
+      },
+      "medium_activity_3_5_orders": {
+        "count": 1339,
+        "positives": 256,
+        "prevalence_pct": 19.12,
+        "roc_auc": 0.6329,
+        "pr_auc": 0.3115,
+        "precision": 0.3824,
+        "recall": 0.1523
+      },
+      "high_activity_6_plus_orders": {
+        "count": 1554,
+        "positives": 606,
+        "prevalence_pct": 39.0,
+        "roc_auc": 0.7318,
+        "pr_auc": 0.6586,
+        "precision": 0.4985,
+        "recall": 0.8003
+      }
+    }
+  }
+}

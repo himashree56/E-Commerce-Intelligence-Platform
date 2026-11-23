@@ -1,0 +1,12 @@
+{
+  "selected_threshold": 0.59,
+  "raw_threshold": 0.59,
+  "calibrated_threshold": 0.27,
+  "selection_split": "validation",
+  "validation_snapshot": "2011-08-01",
+  "optimization_objective": "f1_score",
+  "validation_f1_at_threshold": 0.5217,
+  "validation_calibrated_f1_at_threshold": 0.521,
+  "decision_rule_raw": "repeat_purchase_predicted = probability >= 0.59",
+  "decision_rule_calibrated": "repeat_purchase_predicted = probability >= 0.27"
+}

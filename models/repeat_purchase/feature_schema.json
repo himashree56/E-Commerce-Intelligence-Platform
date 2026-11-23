@@ -1,0 +1,25 @@
+{
+  "feature_names": [
+    "recency_days",
+    "tenure_days",
+    "purchase_frequency",
+    "net_monetary_value",
+    "gross_sales",
+    "return_amount",
+    "return_ratio",
+    "cancellation_frequency",
+    "avg_order_value",
+    "avg_order_interval_days",
+    "purchases_last_30d",
+    "purchases_last_60d",
+    "purchases_last_90d",
+    "spend_last_30d",
+    "spend_last_60d",
+    "spend_last_90d",
+    "product_diversity",
+    "total_quantity_purchased"
+  ],
+  "feature_count": 18,
+  "target": "label_30d",
+  "horizon_days": 30
+}

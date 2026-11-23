@@ -1,0 +1,121 @@
+{
+  "training_records_count": 1027015,
+  "excluded_records_count": 40356,
+  "training_flagged_count": 10271,
+  "training_flagged_pct": 1.0001,
+  "raw_decision_score_stats": {
+    "mean": 0.121435,
+    "std": 0.044999,
+    "min": -0.099775,
+    "p01": 0.0,
+    "p05": 0.040946,
+    "p50": 0.130557,
+    "p95": 0.179152,
+    "p99": 0.189053,
+    "max": 0.198689
+  },
+  "anomaly_score_stats": {
+    "mean": -0.121435,
+    "std": 0.044999,
+    "min": -0.198689,
+    "p50": -0.130557,
+    "p99": -0.0,
+    "max": 0.099775
+  },
+  "diagnostic_thresholds": {
+    "quantity_p99": 108.0,
+    "line_total_p99": 199.20000000000002,
+    "unit_price_p99": 18.68,
+    "line_total_p95": 61.199999999999996,
+    "price_dev_threshold": 1.1
+  },
+  "sensitivity_and_stability": {
+    "contamination_sensitivity": [
+      {
+        "contamination": 0.005,
+        "decision_offset_threshold": -0.017486,
+        "flagged_count": 5135,
+        "flagged_percentage": 0.5
+      },
+      {
+        "contamination": 0.01,
+        "decision_offset_threshold": 0.0,
+        "flagged_count": 10271,
+        "flagged_percentage": 1.0
+      },
+      {
+        "contamination": 0.02,
+        "decision_offset_threshold": 0.01799,
+        "flagged_count": 20541,
+        "flagged_percentage": 2.0
+      },
+      {
+        "contamination": 0.05,
+        "decision_offset_threshold": 0.040946,
+        "flagged_count": 51322,
+        "flagged_percentage": 5.0
+      }
+    ],
+    "seed_stability": {
+      "tested_seeds": [
+        42,
+        123,
+        456,
+        789
+      ],
+      "spearman_rank_correlation_min": 0.9546,
+      "spearman_rank_correlation_mean": 0.9593,
+      "spearman_rank_correlation_max": 0.9673,
+      "jaccard_flag_similarity_min": 0.548,
+      "jaccard_flag_similarity_mean": 0.5772,
+      "jaccard_flag_similarity_max": 0.6474
+    },
+    "synthetic_diagnostic_test": {
+      "injected_count": 5,
+      "detected_count": 5,
+      "diagnostic_detection_rate": 1.0,
+      "synthetic_interpretations": [
+        {
+          "transaction_id": "TXN_0000000",
+          "quantity": 50000,
+          "unit_price": 250.0,
+          "anomaly_score": 0.101466,
+          "is_anomaly": true,
+          "diagnostic_reasons": "EXTREME_QUANTITY;EXTREME_LINE_VALUE;HIGH_UNIT_PRICE;UNUSUAL_PRODUCT_PRICE;NEW_CUSTOMER_HIGH_VALUE"
+        },
+        {
+          "transaction_id": "TXN_0000001",
+          "quantity": 1,
+          "unit_price": 1000.0,
+          "anomaly_score": 0.079889,
+          "is_anomaly": true,
+          "diagnostic_reasons": "EXTREME_LINE_VALUE;HIGH_UNIT_PRICE;UNUSUAL_PRODUCT_PRICE;NEW_CUSTOMER_HIGH_VALUE"
+        },
+        {
+          "transaction_id": "TXN_0000002",
+          "quantity": -30000,
+          "unit_price": 500.0,
+          "anomaly_score": 0.155871,
+          "is_anomaly": true,
+          "diagnostic_reasons": "EXTREME_QUANTITY;EXTREME_LINE_VALUE;HIGH_UNIT_PRICE;UNUSUAL_PRODUCT_PRICE;NEW_CUSTOMER_HIGH_VALUE"
+        },
+        {
+          "transaction_id": "TXN_0000003",
+          "quantity": 10000,
+          "unit_price": 50.0,
+          "anomaly_score": 0.139467,
+          "is_anomaly": true,
+          "diagnostic_reasons": "EXTREME_QUANTITY;EXTREME_LINE_VALUE;HIGH_UNIT_PRICE;UNUSUAL_PRODUCT_PRICE;NEW_CUSTOMER_HIGH_VALUE"
+        },
+        {
+          "transaction_id": "TXN_0000004",
+          "quantity": 1,
+          "unit_price": 5000.0,
+          "anomaly_score": 0.082167,
+          "is_anomaly": true,
+          "diagnostic_reasons": "EXTREME_LINE_VALUE;HIGH_UNIT_PRICE;UNUSUAL_PRODUCT_PRICE;NEW_CUSTOMER_HIGH_VALUE"
+        }
+      ]
+    }
+  }
+}

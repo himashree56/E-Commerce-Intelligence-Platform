@@ -1,0 +1,42 @@
+{
+  "gain": {
+    "purchase_frequency": 317.166,
+    "purchases_last_90d": 192.1933,
+    "net_monetary_value": 154.914,
+    "spend_last_90d": 144.3054,
+    "avg_order_interval_days": 129.1384,
+    "gross_sales": 49.6875,
+    "recency_days": 48.2672,
+    "total_quantity_purchased": 45.4259,
+    "purchases_last_60d": 28.5418,
+    "tenure_days": 22.5935,
+    "product_diversity": 21.3281,
+    "return_ratio": 16.3644,
+    "spend_last_60d": 16.2738,
+    "spend_last_30d": 14.8637,
+    "return_amount": 14.2887,
+    "avg_order_value": 14.0406,
+    "cancellation_frequency": 12.0665,
+    "purchases_last_30d": 0.0
+  },
+  "weight": {
+    "recency_days": 138.0,
+    "tenure_days": 42.0,
+    "purchase_frequency": 66.0,
+    "net_monetary_value": 48.0,
+    "gross_sales": 17.0,
+    "return_amount": 8.0,
+    "return_ratio": 22.0,
+    "cancellation_frequency": 7.0,
+    "avg_order_value": 21.0,
+    "avg_order_interval_days": 118.0,
+    "purchases_last_30d": 0.0,
+    "purchases_last_60d": 11.0,
+    "purchases_last_90d": 44.0,
+    "spend_last_30d": 7.0,
+    "spend_last_60d": 19.0,
+    "spend_last_90d": 30.0,
+    "product_diversity": 28.0,
+    "total_quantity_purchased": 58.0
+  }
+}
